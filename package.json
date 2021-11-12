@@ -1,0 +1,45 @@
+{
+  "name": "@kabaliserv/vue-tooltip",
+  "version": "1.0.0",
+  "description": "Tooltip for vue3",
+  "main": "dist/ks-input-text.umd.js",
+  "module": "dist/ks-input-text.esm.js",
+  "unpkg": "dist/ks-input-text.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build",
+    "preversion": "npm run build",
+    "postversion": "git commit -a -m \"build: update minified app\" && git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilson-kbs/vue-tooltip.git"
+  },
+  "keywords": [
+    "tooltip"
+  ],
+  "author": "Wilson Kabalisa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilson-kbs/vue-tooltip/issues"
+  },
+  "homepage": "https://github.com/wilson-kbs/vue-tooltip#readme",
+  "dependencies": {
+    "vue": "^3.2.21"
+  },
+  "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "gzip-size": "^6.0.0",
+    "pretty-bytes": "^5.6.0",
+    "rollup": "^2.60.0",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.43.4",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4",
+    "uglify-js": "^3.14.3",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
