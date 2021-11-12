@@ -10,7 +10,7 @@ const buble = require('@rollup/plugin-buble');
 const typescript = require('rollup-plugin-typescript2');
 const postcss = require('rollup-plugin-postcss')
 
-const name = 'KsInputText'
+const name = 'KsTooltip'
 const date = new Date();
 
 const banner = `/*
@@ -25,10 +25,6 @@ console.info('Compiling... 😤');
 
 rollup({
   input: 'src/wrapper.ts',
-  output: {
-    name: 'KsInputText',
-    exports: 'named',
-  },
   plugins: [
     typescript({ check: false }),
     vue({
@@ -44,7 +40,7 @@ rollup({
   await bun.write({
     banner,
     format: 'umd',
-    name: 'KsInputText',
+    name,
     exports: 'named',
     file: pkg.main
   });
@@ -52,7 +48,7 @@ rollup({
   await bun.write({
     banner,
     format: 'es',
-    name: 'KsInputText',
+    name,
     exports: 'named',
     file: pkg.module
   });
@@ -60,7 +56,7 @@ rollup({
   await bun.write({
     banner,
     file: pkg.unpkg,
-    name: 'KsInputText',
+    name,
     exports: 'named',
     format: 'iife',
   }).then(_ => {

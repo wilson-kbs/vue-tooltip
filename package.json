@@ -1,10 +1,11 @@
 {
   "name": "@kabaliserv/vue-tooltip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tooltip for vue3",
-  "main": "dist/ks-input-text.umd.js",
-  "module": "dist/ks-input-text.esm.js",
-  "unpkg": "dist/ks-input-text.min.js",
+  "main": "dist/ks-tooltip.umd.js",
+  "module": "dist/ks-tooltip.esm.js",
+  "unpkg": "dist/ks-tooltip.min.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build",
