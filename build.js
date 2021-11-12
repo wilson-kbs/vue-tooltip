@@ -17,7 +17,7 @@ const banner = `/*
  * wavify v${pkg.version}
  * (c) ${date.getFullYear()} Wilson Kabalisa
  * Released under the MIT license
- * https://github.com/wilson-kbs/wavify
+ * https://github.com/wilson-kbs/vue-tooltip
  */
 `;
 

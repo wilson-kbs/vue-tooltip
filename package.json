@@ -1,6 +1,6 @@
 {
   "name": "@kabaliserv/vue-tooltip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tooltip for vue3",
   "main": "dist/ks-tooltip.umd.js",
   "module": "dist/ks-tooltip.esm.js",
